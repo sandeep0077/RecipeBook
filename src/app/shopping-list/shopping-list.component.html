@@ -3,7 +3,9 @@
         <app-shopping-edit></app-shopping-edit>
         <hr>
         <ul class="list-group">
-            <a style="cursor: pointer" class="list-group-item" ></a>
+            <a style="cursor: pointer" class="list-group-item"
+            *ngFor = "let ingrident of ingredients">
+        {{ ingrident.name}} ({{ ingrident.amount }})</a>
         </ul>
     </div>
 </div>
